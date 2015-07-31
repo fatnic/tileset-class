@@ -12,6 +12,7 @@ public:
   sf::Vector2i getTileSize();
   sf::Vector2i getMapSize();
   sf::Texture getTexture();
+  sf::Texture bgTexture;
 private:
   void generateTexture();
   pugi::xml_node nodeMap;
@@ -22,8 +23,6 @@ private:
   sf::Vector2i gridSize;
   sf::Vector2i mapSize;
   std::string fnTileset;
-
-  sf::Texture bgTexture;
 
   std::string mapString;
 };

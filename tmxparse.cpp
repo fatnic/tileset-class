@@ -62,7 +62,6 @@ void tmxparse::generateTexture()
   sf::Vector2i tsGridSize((imgTileset.getSize().x / this->tileSize.x), (imgTileset.getSize().y / this->tileSize.y));
 
   std::string rawstring = this->nodeData.child_value();
-  rawstring.erase(std::remove(rawstring.begin(), rawstring.end(), '\n'), rawstring.end());
   std::string mapString = rawstring.c_str();
   std::istringstream ss(mapString);
   std::string tile;
